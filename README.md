@@ -1,6 +1,5 @@
 325 CD, Corcodel Denisa
 
-:heavy_check_mark:
 # Task 1 
 -	Input-ul acestui task este N si sirul de numere. Rezolvarea acestui task presupune sortarea elementelor si realizarea unei sume in care calculez diferenta maxima a celor doi. La final returnez suma. Se aplica metoda Greedy, iar complexitatea este
 ```
@@ -19,6 +18,7 @@ La fiecare pas aleg intre solutia care il include pe elementul anterior din vect
 dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - 1] +/- v[i - 1]) 
 ```
 returneaza dp[n][n-k], adica diferenta maxima din intreaga multime selectand n - k numere 
+
 ```O ( n^2 *log n )```
 
 :heavy_check_mark:
@@ -35,3 +35,4 @@ dp[i][j] = max ( min (dp[i+1][j-1], dp[i+2][j])  + a[i] , min(dp[i+1][j-1],dp[i]
 ```
 O (n^2)
 ```
+:heavy_check_mark: 
