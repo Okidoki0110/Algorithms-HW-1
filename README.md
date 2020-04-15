@@ -1,15 +1,12 @@
 325 CD, Corcodel Denisa
 
-:heavy_check_mark:
-# Task 1 
+:heavy_check_mark:  # Task 1 
 -	Input-ul acestui task este N si sirul de numere. Rezolvarea acestui task presupune sortarea elementelor si realizarea unei sume in care calculez diferenta maxima a celor doi. La final returnez suma. Se aplica metoda Greedy, iar complexitatea este
 ```
-O (n * log n )
+O (n * log n)
 ```
 
-:heavy_check_mark:
-# Task 2 
--
+:heavy_check_mark: # Task 2 
 	Input-ul acestui task este N ( = numarul de numere ), ( K = numarul numerelor pe care le elimiana pentru a maximiza scorul) si sirul de numere. 
 Am considerat diferenta maxima obtinuta din primele i numere sortate descrescator selectam exact j din ele ca fiind dp[i][j],matrice dp de dimensiune n + 1 x n - k + 1
 
@@ -19,11 +16,9 @@ La fiecare pas aleg intre solutia care il include pe elementul anterior din vect
 dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - 1] +/- v[i - 1]) 
 ```
 returneaza dp[n][n-k], adica diferenta maxima din intreaga multime selectand n - k numere 
-```O ( n ^ 2 *log n )```
+```O ( n^2 *log n )```
 
-:heavy_check_mark:
-# Task 3 
--
+:heavy_check_mark: # Task 3 
 	Input-ul acestui task este acelasi cu cel de la primul task, insa strategia se schimba deoarece el trebuie sa elimine ori cel mai din dreapta ori cel mai
 din stanga element. 
 	Cazul de baza este reprezentat de un sir ce contine un singur element.
@@ -33,5 +28,5 @@ dp[i][j] = max ( min (dp[i+1][j-1], dp[i+2][j])  + a[i] , min(dp[i+1][j-1],dp[i]
 	Daca voi considera ca a[i] este elementul cel mai din stanga, iar a[j] elementul cel mai din dreapta,  se va considera cazul de baza. Tzugu a obtinut scorul  maxim dp[0][n-1],iar oponentului i-a ramas suma vectorului. 
 
 ```
-O ( n ^ 2 )
+O (n^2)
 ```
