@@ -3,7 +3,7 @@
 # Task 1 
 -	Input-ul acestui task este N ( = numarul de numere ) si sirul de numere. Rezolvarea acestui task presupune sortarea elementelor si realizarea unei sume in care calculez diferenta maxima a celor doi. La final returnez suma. Se aplica metoda Greedy, iar complexitatea este
 ```
-O (n * log n ).
+O (n * log n )
 ```
 
 # Task 2 
