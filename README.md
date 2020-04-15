@@ -1,11 +1,13 @@
 325 CD, Corcodel Denisa
 
+:heavy_exclamation_mark:
 # Task 1 
--	Input-ul acestui task este N ( = numarul de numere ) si sirul de numere. Rezolvarea acestui task presupune sortarea elementelor si realizarea unei sume in care calculez diferenta maxima a celor doi. La final returnez suma. Se aplica metoda Greedy, iar complexitatea este
+-	Input-ul acestui task este N si sirul de numere. Rezolvarea acestui task presupune sortarea elementelor si realizarea unei sume in care calculez diferenta maxima a celor doi. La final returnez suma. Se aplica metoda Greedy, iar complexitatea este
 ```
 O (n * log n )
 ```
 
+:heavy_exclamation_mark:
 # Task 2 
 -
 	Input-ul acestui task este N ( = numarul de numere ), ( K = numarul numerelor pe care le elimiana pentru a maximiza scorul) si sirul de numere. 
@@ -16,13 +18,10 @@ La fiecare pas aleg intre solutia care il include pe elementul anterior din vect
 ```
 dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - 1] +/- v[i - 1]) 
 ```
-returneaza dp[n][n-k], adica diferenta maxima din intreaga multime selectand n - k numere 
+returneaza dp[n][n-k], adica diferenta maxima din intreaga multime selectand n - k numere O ( n ^ 2 *log n )
 
-```		
- O ( n ^ 2 *log n )
-```	
-
-# Task 3 
+:heavy_exclamation_mark:
+# Task 3:
 
 	Input-ul acestui task este acelasi cu cel de la primul task, insa strategia se schimba deoarece el trebuie sa elimine ori cel mai din dreapta ori cel mai
 din stanga element. 
@@ -30,8 +29,8 @@ din stanga element.
 	Calculez maximul elementului cel mai din stanga, deoarece vreau scorul cat mai mare si minimul restului de vector pentru ca din doua elemente ramase oponentul
 il va lua pe cel mai mare. Folosesc o matrice de dimensiune n * n, in care diagonala principala contine elementele din vector. Pentru a extinde se foloseste formula
 dp[i][j] = max ( min (dp[i+1][j-1], dp[i+2][j])  + a[i] , min(dp[i+1][j-1],dp[i][j-2]) + a[j]) )
-	Daca voi considera ca a[i] este elementul cel mai din stanga, iar a[j] elementul cel mai din dreapta,  se va considera cazul de baza. Tzugu a obtinut scorul 
-maxim dp[0][n-1],iar oponentului i-a ramas suma vectorului. 
+	Daca voi considera ca a[i] este elementul cel mai din stanga, iar a[j] elementul cel mai din dreapta,  se va considera cazul de baza. Tzugu a obtinut scorul  maxim dp[0][n-1],iar oponentului i-a ramas suma vectorului. 
+
 ```
 O ( n ^ 2 )
 ```
