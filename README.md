@@ -76,6 +76,6 @@ Exemplu debug
 			(activez DEBUG - by default fisierele de out sunt sterse)
 
 Ma uit in fisierele:
-		- public_test/gigel/input/4-gigel.in   // ce input am
+	```	- public_test/gigel/input/4-gigel.in   // ce input am
 		- public_test/gigel/out/4-gigel.out    // ce raspuns gaseste algoritmul meu
-		- public_test/gigel/ref/4-gigel.ref    // care este raspunsul corect (asteptat)
+		- public_test/gigel/ref/4-gigel.ref    // care este raspunsul corect (asteptat) ```
