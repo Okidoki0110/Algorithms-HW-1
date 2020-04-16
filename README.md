@@ -41,7 +41,7 @@ O (n^2)
 # Rulare:
 	
 - local:
-		```./check.sh```
+		./check.sh
 		
 	* sursele + Makefile trebuie sa se afle in directorul curent
 
@@ -75,7 +75,7 @@ Exemplu debug
 			# DEBUG=on
 			(activez DEBUG - by default fisierele de out sunt sterse)
 
-		Ma uit in fisierele:
+Ma uit in fisierele:
 		- public_test/gigel/input/4-gigel.in   // ce input am
 		- public_test/gigel/out/4-gigel.out    // ce raspuns gaseste algoritmul meu
 		- public_test/gigel/ref/4-gigel.ref    // care este raspunsul corect (asteptat)
